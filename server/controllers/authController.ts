@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import User from '../models/User';
+import User from '../models/User.js';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
-import { seedDummyData } from './seedData';
+import { seedDummyData } from './seedData.js';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_key_here_make_it_long_and_secure_123456789';
 

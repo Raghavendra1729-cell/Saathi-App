@@ -1,7 +1,7 @@
 import { WebSocketServer, WebSocket } from 'ws';
 import jwt from 'jsonwebtoken';
-import Message from './models/Message';
-import User from './models/User';
+import Message from './models/Message.js';
+import User from './models/User.js';
 
 interface AuthenticatedWebSocket extends WebSocket {
   userId?: string;

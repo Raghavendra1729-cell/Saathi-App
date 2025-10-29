@@ -1,6 +1,6 @@
 import express from 'express';
-import Prescription from '../models/Prescription';
-import { requireAuth } from '../middleware/auth';
+import Prescription from '../models/Prescription.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = express.Router();
 

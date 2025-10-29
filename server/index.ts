@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { createServer } from 'http';
-import { setupWebSocketServer } from './websocket';
+import { setupWebSocketServer } from './websocket.js';
 
 // Load environment variables
 dotenv.config();
@@ -36,13 +36,13 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/saathi')
   .catch((err) => console.error('❌ MongoDB connection error:', err));
 
 // Import routes
-import authRoutes from './routes/auth';
-import reminderRoutes from './routes/reminders';
-import voiceRoutes from './routes/voice';
-import messageRoutes from './routes/messages';
-import eventRoutes from './routes/events';
-import tripRoutes from './routes/trips';
-import prescriptionRoutes from './routes/prescriptions';
+import authRoutes from './routes/auth.js';
+import reminderRoutes from './routes/reminders.js';
+import voiceRoutes from './routes/voice.js';
+import messageRoutes from './routes/messages.js';
+import eventRoutes from './routes/events.js';
+import tripRoutes from './routes/trips.js';
+import prescriptionRoutes from './routes/prescriptions.js';
 
 // API Routes
 app.use('/api/auth', authRoutes);

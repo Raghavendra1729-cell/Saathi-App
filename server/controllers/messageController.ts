@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import Message from '../models/Message';
-import User from '../models/User';
+import Message from '../models/Message.js';
+import User from '../models/User.js';
 
 export const getConversations = async (req: Request, res: Response) => {
   try {

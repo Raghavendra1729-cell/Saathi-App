@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import Reminder from './models/Reminder';
+import Reminder from './models/Reminder.js';
 
 dotenv.config();
 

@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import User from './models/User';
-import Event from './models/Event';
-import Trip from './models/Trip';
-import { seedDummyData } from './controllers/seedData';
+import User from './models/User.js';
+import Event from './models/Event.js';
+import Trip from './models/Trip.js';
+import { seedDummyData } from './controllers/seedData.js';
 
 dotenv.config();
 

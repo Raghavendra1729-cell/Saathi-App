@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import User from '../models/User';
-import Event from '../models/Event';
-import Trip from '../models/Trip';
-import Message from '../models/Message';
+import User from '../models/User.js';
+import Event from '../models/Event.js';
+import Trip from '../models/Trip.js';
+import Message from '../models/Message.js';
 
 export const seedDummyData = async (currentUserId: string) => {
   try {

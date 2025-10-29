@@ -1,6 +1,6 @@
 import express from 'express';
-import * as reminderController from '../controllers/reminderController';
-import { requireAuth } from '../middleware/auth';
+import * as reminderController from '../controllers/reminderController.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = express.Router();
 

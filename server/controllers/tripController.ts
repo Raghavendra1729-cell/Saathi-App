@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Trip from '../models/Trip';
+import Trip from '../models/Trip.js';
 
 export const getAllTrips = async (req: Request, res: Response) => {
   try {

@@ -1,6 +1,6 @@
 import express from 'express';
-import * as messageController from '../controllers/messageController';
-import { requireAuth } from '../middleware/auth';
+import * as messageController from '../controllers/messageController.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = express.Router();
 

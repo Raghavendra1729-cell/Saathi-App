@@ -1,6 +1,6 @@
 import express from 'express';
-import * as voiceController from '../controllers/voiceController';
-import { requireAuth } from '../middleware/auth';
+import * as voiceController from '../controllers/voiceController.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = express.Router();
 
