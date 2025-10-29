@@ -12,6 +12,7 @@
     "rootDir": "./",
     "allowJs": true,
     "noEmit": false,
+    "noImplicitAny": false,
     "types": ["node"]
   },
   "include": ["**/*.ts"],
